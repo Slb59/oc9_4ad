@@ -36,14 +36,19 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
-]
+FAD_APPS = ["fad",
+            "fad.users.apps.UsersConfig",
+            "fad.fadapp.apps.FadappConfig"]
+
+DJANGO_APPS = ["django.contrib.admin",
+               "django.contrib.auth",
+               "django.contrib.contenttypes",
+               "django.contrib.sessions",
+               "django.contrib.messages",
+               "django.contrib.staticfiles",
+               ]
+
+INSTALLED_APPS = FAD_APPS + DJANGO_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

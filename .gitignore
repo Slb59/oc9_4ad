@@ -12,3 +12,6 @@ __pycache__
 
 # no driver
 tools
+
+# no tests
+.pytest_cache
